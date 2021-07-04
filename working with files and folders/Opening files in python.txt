@@ -1,0 +1,44 @@
+"r"
+Read from file - YES
+Write to file - NO
+Create file if not exists - NO
+Truncate file to zero length - NO
+Cursor position - BEGINNING
+
+"r+"
+Read from file - YES
+Write to file - YES
+Create file if not exists - NO
+Truncate file to zero length - NO
+Cursor position - BEGINNING
+
+"w"
+Read from file - NO
+Write to file - YES
+Create file if not exists - YES
+Truncate file to zero length - YES
+Cursor position - BEGINNING
+
+"w+"
+Read from file - YES
+Write to file - YES
+Create file if not exists - YES
+Truncate file to zero length - YES
+Cursor position - BEGINNING
+
+"a"
+Read from file - NO
+Write to file - YES
+Create file if not exists - YES
+Truncate file to zero length - NO
+Cursor position - END
+
+"a+"
+Read from file - YES
+Write to file - YES
+Create file if not exists - YES
+Truncate file to zero length - NO
+Cursor position - END
+
+binary write mode= wb
+binary read mode=rb
