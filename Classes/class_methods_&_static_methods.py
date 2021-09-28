@@ -29,10 +29,22 @@ class Employee:
 
 	@classmethod
 	def from_string(cls, emp_str):
-		""" Using class Mehthos as alternative constructor """
+		""" Using class Mehthods as alternative constructor """		
 		first, last, pay = emp_str_1.split('-')
 		return cls(first, last, pay)
 
+	@staticmethod
+	def is_workday(day):
+		"""
+		static methods are just like regular functions but defined inside
+		a class. They do not require 'cls' or 'self' as first arg.
+		Static Methods are used where no function is performed on 'instance'
+		or 'class'
+		"""
+		if day.weekday() == 5 or day.weekday() == 6:
+			# saturday or sunday
+			return False
+		return True
 
 
 emp_1 = Employee('Corey', 'Schafer', '40000')
@@ -58,3 +70,7 @@ emp_str_3 = 'usman-yaqoob-20000'
 new_emp_1 = Employee.from_string(emp_str_1)
 
 print(f'pay: {new_emp_1.pay}, email:{new_emp_1.email}')
+
+import datetime
+my_date = datetime.date(2021, 9, 26) #sunday
+print(Employee.is_workday(my_date))
