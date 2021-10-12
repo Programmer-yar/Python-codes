@@ -25,4 +25,3 @@ print('This command converts to uppercase'.upper())
 print("This COMMAND CONVERTS TO LOWERCASE".lower())
 
 
-
